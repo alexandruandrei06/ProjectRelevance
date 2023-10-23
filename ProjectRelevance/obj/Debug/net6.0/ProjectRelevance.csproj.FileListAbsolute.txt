@@ -1,0 +1,15 @@
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/bin/Debug/net6.0/ProjectRelevance
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/bin/Debug/net6.0/ProjectRelevance.deps.json
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/bin/Debug/net6.0/ProjectRelevance.runtimeconfig.json
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/bin/Debug/net6.0/ProjectRelevance.dll
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/bin/Debug/net6.0/ProjectRelevance.pdb
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.csproj.AssemblyReference.cache
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.GeneratedMSBuildEditorConfig.editorconfig
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.AssemblyInfoInputs.cache
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.AssemblyInfo.cs
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.csproj.CoreCompileInputs.cache
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.dll
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/refint/ProjectRelevance.dll
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.pdb
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ProjectRelevance.genruntimeconfig.cache
+/home/bobis/Desktop/ProjectRelevance/ProjectRelevance/obj/Debug/net6.0/ref/ProjectRelevance.dll
