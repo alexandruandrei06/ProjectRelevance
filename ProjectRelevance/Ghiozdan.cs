@@ -5,41 +5,41 @@ namespace ProjectRelevance;
 
 public class Ghiozdan
 {
-    public float maxVolume // maxVolume property
+    public float maxVolume // volumul maxim pe care il poate cara ghiozdanul
     {
         get;  // get method for maxVolume
     }
 
-    public float maxWeight // property
+    public float maxWeight // greutatea maxima pe care o poate care ghiozdanul
     {
         get;
-        // get method
+        // get method for maxWeight
     }
 
-    public int maxItemsNumber // property
+    public int maxItemsNumber // numarul maxim de articole pe care le poate cara ghiozdanul
     {
         get;
-        // get method
+        // get method for maxItemsNumber
     }
     
-    public float currVolume // maxVolume property
+    public float currVolume // volumul curent care se afla in ghiozdan
     {
-        get;  // get method for maxVolume
+        get;  // get method for currVolume
         set;
     }
 
-    public float currWeight // property
+    public float currWeight // greutatea curenta care se afla in ghiozdan
     {
         get;
-        // get method
+        // get method for currWeight
         set;
     }
 
-    public ArrayList itemBag
+    public ArrayList itemBag // O lista care contine toate obiectele adaugate in ghiozdan
     {
         get;
     }
-
+    
     public Ghiozdan(float maxVolume, float maxWeight, int maxItemsNumber)
     {
         this.maxVolume = maxVolume;
@@ -49,13 +49,18 @@ public class Ghiozdan
         this.currVolume = 0;
         this.currWeight = 0;
     }
-
+    
+    /*
+     * Aceasta functie verifica daca se poate adauga un articol in ghiozdan returnand daca actiunea a reusit sau nu
+     */
     public bool Adauga(ArticolInventar articol)
     {
+        //Verificare ca nu sunt depasite limitele ghiozdanului
         if (this.itemBag.Count < this.maxItemsNumber 
             && articol.weight + this.currWeight <= this.maxWeight
             && articol.volume + this.currVolume <= this.maxVolume)
         {
+            //Adaugare element si update la starea ghiozdanului
             this.itemBag.Add(articol);
             this.currVolume += articol.volume;
             this.currWeight += articol.weight;
@@ -67,6 +72,9 @@ public class Ghiozdan
         }
     }
 
+    /*
+     * Aceasta functie printeaza limitele ghiozdanului
+     */
     public void printLimits()
     {
         Console.WriteLine("Limitele ghiozdanului:");
@@ -75,6 +83,9 @@ public class Ghiozdan
         Console.WriteLine("Volumul maxim admis: " + this.maxVolume);
     }
 
+    /*
+     * Aceasta functie printeaza starea curenta a ghiozdanului
+     */
     public void printItems()
     {
         Console.WriteLine("Continutul ghiozdanului este:");

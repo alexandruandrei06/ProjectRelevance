@@ -2,11 +2,16 @@
 
 using ProjectRelevance;
 
+// Variabile folosite pe parcursul programului
 int maxItemsNumber;
 float maxWeight, maxVolume;
+char command;
+bool exit = false;
 
+// Obiectul ajutator pentru meniul interactiv al aplicatiei
 ConsoleHelper interactiveConsole = new ConsoleHelper();
 
+// Citirea si initializarea ghiozdanului cu limitele acestuia
 Console.WriteLine("Introduceti limitele ghiozdanului:");
 Console.Write("Numarul maxim de articole admise: ");
 maxItemsNumber = Convert.ToInt32(Console.ReadLine());
@@ -20,8 +25,6 @@ Ghiozdan ghiozdan = new Ghiozdan(maxVolume, maxWeight, maxItemsNumber);
 Console.Clear();
 ghiozdan.printLimits();
 
-char command;
-bool exit = false;
 while(!exit) {
     interactiveConsole.printMenu();
     Console.Write("Comanda = ");
@@ -29,6 +32,7 @@ while(!exit) {
     Console.Clear();
     switch (command)
     {
+        //Adaugarea unui obiect in ghiozdan
         case 'A':
             interactiveConsole.printAddOption();
             string obiect = Console.ReadLine().ToLower().Replace("\n", "");
@@ -96,15 +100,19 @@ while(!exit) {
                     break;
             }
             break;
+        //Afisarea limitelor ghiozdanului
         case 'L':
             ghiozdan.printLimits();
             break;
+        //Afisarea continutului ghiozdanului
         case 'C':
             ghiozdan.printItems();
             break;
+        //Afisarea articolelor posibile
         case 'E':
             interactiveConsole.printPosibleElements();
             break;
+        //Terminarea programului
         case 'X':
             exit = true;
             break;
